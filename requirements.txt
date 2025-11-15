@@ -1,7 +1,7 @@
 sentence-transformers
 sentencepiece
 streamlit
-google
+google-genai
 python-dotenv
 faiss-cpu
 pandas
