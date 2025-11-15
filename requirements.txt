@@ -4,6 +4,5 @@ streamlit
 google
 python-dotenv
 faiss-cpu
-pickle
 pandas
 numpy
