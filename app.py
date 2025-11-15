@@ -1,4 +1,3 @@
-from re import search
 from llm_generation import *
 import streamlit as st
 from dotenv import load_dotenv

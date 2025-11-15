@@ -2,7 +2,6 @@ import streamlit as st
 import faiss
 import pickle
 from sentence_transformers import SentenceTransformer
-from openai import OpenAI
 from google import genai
 import os
 from dotenv import load_dotenv
