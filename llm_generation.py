@@ -80,7 +80,7 @@ def generate_response(query, retrieved_docs, user_api_key):
         Reply directly to the customer question.Provide a helpful recommendation with reasoning. Mention specific product names, prices, and key features."""
             client = genai.Client(api_key=key)
             response = client.models.generate_content(
-            model="gemini-2.0-flash", contents=prompt
+            model="gemini-2.5-flash", contents=prompt
         )
             return response.text
         except Exception as e:
@@ -88,7 +88,7 @@ def generate_response(query, retrieved_docs, user_api_key):
                 print(f"User Key Invalid {e}. Trying our key...")
                 continue
             else:
-                return f"Error: {str(e)}. Please provide a valid API key to continue"
+                return f"Error: Rate Limit Exceeded. Please provide a valid API key to continue"
     return "No valid API key available."
  
 
